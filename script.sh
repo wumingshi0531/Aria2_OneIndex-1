@@ -62,8 +62,8 @@ function aria2ng_install(){
 }
 function nginx_conf_add(){
     rm -rf /etc/nginx/conf.d/default.conf
-    wget -N -P  /etc/nginx/conf.d/ --no-check-certificate "https://raw.githubusercontent.com/marisn2017/Aria2_OneIndex/master/OneIndex.conf"
-    wget -N -P  /etc/nginx/conf.d/ --no-check-certificate "https://raw.githubusercontent.com/marisn2017/Aria2_OneIndex/master/aria2ng.conf"
+    wget -N -P  /etc/nginx/conf.d/ --no-check-certificate "https://raw.githubusercontent.com/wumingshi0531/Aria2_OneIndex-1/master/OneIndex.conf"
+    wget -N -P  /etc/nginx/conf.d/ --no-check-certificate "https://raw.githubusercontent.com/wumingshi0531/Aria2_OneIndex-1/master/aria2ng.conf"
 	if [[ $? -eq 0 ]];then
         echo -e "nginx 配置导入成功"
         sleep 1
